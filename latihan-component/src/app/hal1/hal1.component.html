@@ -1,0 +1,18 @@
+<a routerLink="/hal3">halaman 3</a>
+<h4>Halaman 1</h4>
+Judul: <br>
+<input type="text" [(ngModel)]="judul"><br>
+
+Isi: <br>
+<input type="text" [(ngModel)]="isi"><br>
+
+Tanggal: <br>
+<input type="text" [(ngModel)]="tanggal"><br>
+<button (click)="tambah()">tambah</button>
+<br><br>
+<div *ngFor="let a of data; let i = index">
+  <hr>
+<h3>Judul {{a.judul}}</h3>
+<button (click)="detail(i)">Detail</button>
+<br><br>
+</div>

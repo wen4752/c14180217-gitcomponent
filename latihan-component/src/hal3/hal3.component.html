@@ -1,0 +1,11 @@
+<a routerLink="/hal1">halaman 1</a>
+
+<div *ngFor="let a of data;">
+	<hr>
+	<h3>Judul {{a.judul}}</h3>
+	Isi: <br>
+	<p>{{a.isi}}</p>
+	Tanggal:
+	<p>{{a.tanggal}}</p>
+	<p>Favorite: {{a.favorite}}</p>
+</div>
